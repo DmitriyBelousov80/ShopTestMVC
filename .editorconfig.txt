@@ -1,0 +1,34 @@
+root = true
+
+[*]
+# Использовать отсутпы для пробелов
+indent_style = space
+
+# Использовать 4 пробела для отступа
+indent_size = 4
+
+# Использовать UTF-8 для всех файлов
+charset = utf-8
+
+# Запретить пробелы в конце строки
+trim_trailing_whitespace = false
+
+# Запретить пустую строку в конце файла
+insert_final_newline = false
+
+[*.cs]
+# Использовать явное указание простых типов
+csharp_style_var_for_built_in_types = false:warning
+
+# Использовать var когда тип очевиден исходя
+# из правой части выражения
+csharp_style_var_when_type_is_apparent = true:warning
+
+# Во всех остальный случаях также использовать var
+csharp_style_var_elsewhere = true:warning
+
+# Новая строка перед открывающей скобкой
+csharp_new_line_before_open_brace = true:error
+
+# Новая строка перед членами в анонимных типах
+csharp_new_line_before_members_in_anonymous_types = true:warning
